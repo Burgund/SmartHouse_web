@@ -32,7 +32,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="lights.html">
+                        <a class="nav-link" href="#">
                             <span data-feather="file"></span>
                             Oświetlenie
                         </a>
@@ -67,7 +67,7 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                <h1 class="h2">Panel główny</h1>
+                <h1 class="h2">Oświetlenie</h1>
             </div>
 
             <h2>Stan moich urządzeń</h2>
@@ -98,13 +98,6 @@
                         <td>Włączone</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Drzwi wejściowe</td>
-                        <td>Drzwi i okna</td>
-                        <td>Korytarz</td>
-                        <td>Zamknięte</td>
-                    </tr>
-                    <tr>
                         <td>4</td>
                         <td>Lampa #3</td>
                         <td>Oświetlenie</td>
@@ -112,6 +105,55 @@
                         <td>Wyłączone</td>
                     </tr>
                     </tbody>
+                </table>
+            </div>
+
+            <h2>Zarządzaj</h2>
+            <div> <!-- Class??? -->
+                <table class="table table-striped table-sm">
+                   <thead>
+                   <tr>
+                       <th>Nazwa</th>
+                       <th>Jasność</th>
+                       <th>On/Off</th>
+                       <th>Plan</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>Lampa #1</td>
+                           <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                           <td>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="check_on round"></span>
+                                </label>
+                           </td>
+                           <td>brak</td>
+                       </tr>
+                       <tr>
+                           <td>Lampa #2</td>
+                           <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                           <td>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="check_on round"></span>
+                                </label>
+                           </td>
+                           <td>Wakacje 2018</td>
+                       </tr>
+                       <tr>
+                           <td>Lampa #3</td>
+                           <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                           <td>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="check_on round"></span>
+                                </label>
+                           </td>
+                           <td>brak</td>
+                       </tr>
+                   </tbody>
                 </table>
             </div>
         </main>
