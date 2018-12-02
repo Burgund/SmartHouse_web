@@ -38,7 +38,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active" href="heating.html">
+                      <a class="nav-link" href="heating.html">
                           <span data-feather="thermometer"></span>
                           Temperatura
                       </a>
@@ -62,7 +62,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="groupManager.html">
+                      <a class="nav-link active" href="groupManager.html">
                           <span data-feather="layers"></span>
                           Zarządzanie grupami
                       </a>
@@ -79,64 +79,59 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                <h1 class="h2">Ogrzewanie/klimatyzacja</h1>
+                <h1 class="h2">Zarządzanie grupami</h1>
             </div>
 
-            <h2>Aktualna temperatura</h2>
+            <h2>Grupy</h2>
             <div class="table-responsive">
                 <table class="table table-striped table-sm">
                     <thead>
                     <tr>
-                        <th>Pomieszczenie</th>
-                        <th>Temperatura</th>
-                        <th>Zmień temperaturę</th>
+                        <th>Nazwa</th>
+                        <th>Urządzenia</th>
+                        <th>Edytuj</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Łazienka</td>
-                        <td>25,5</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Łazienka - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Korytarz 1</td>
-                        <td>26</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Korytarz - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Salon</td>
-                        <td>24</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Salon - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Sypialnia</td>
-                        <td>24</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Sypialnia - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Kuchnia</td>
-                        <td>23</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Kuchnia - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Garaż</td>
-                        <td>18</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Pracownia - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Pracownia</td>
-                        <td>22</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Toaleta - oświetlenie</td>
+                        <td><span data-feather="sun"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     <tr>
-                        <td>Toaleta</td>
-                        <td>24</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
-                    </tr>
-                    <tr>
-                        <td>Korytarz 2</td>
-                        <td>24</td>
-                        <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+                        <td>Dom - ogrzewanie</td>
+                        <td><span data-feather="thermometer"/></td>
+                        <td><button class="slider" type="button">Edytuj</button></td>
                     </tr>
                     </tbody>
                 </table>
