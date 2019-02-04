@@ -82,16 +82,16 @@
                 <h1 class="h2">Zarządzanie urządzeniami</h1>
             </div>
 
-            <h2>Moje urządzenia</h2>
-            <div class="table-responsive">
-                <table class="table table-striped table-sm">
-                    <thead>
+            <h2 class="mt-2">Moje urządzenia</h2>
+            <div class="table-responsive mt-4">
+                <table class="table table-hover table-sm">
+                    <thead class="thead-light">
                     <tr>
                         <th>#</th>
                         <th>Nazwa</th>
                         <th>Typ</th>
                         <th>Dodano</th>
-                        <th>Zmień grupę</th>
+                        <th>Akcje</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -100,45 +100,64 @@
                         <td>Lampa #1</td>
                         <td>Oświetlenie</td>
                         <td>18.11.2018</td>
-                        <td>TODO</td> <!-- TODO -->
+                        <td>
+                            <button class="btn btn-primary mr-2" type="button"><i class="edit"></i></button>
+                            <button class="btn btn-danger" type="button"><i class="delete"></i></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Lampa #2</td>
                         <td>Oświetlenie</td>
                         <td>18.11.2018</td>
-                        <td>TODO</td> <!-- TODO -->
+                        <td>
+                            <button class="btn btn-primary mr-2" type="button"><i class="edit"></i></button>
+                            <button class="btn btn-danger" type="button"><i class="delete"></i></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Drzwi wejściowe</td>
                         <td>Drzwi i okna</td>
                         <td>18.11.2018</td>
-                        <td>TODO</td> <!-- TODO -->
+                        <td>
+                            <button class="btn btn-primary mr-2" type="button"><i class="edit"></i></button>
+                            <button class="btn btn-danger" type="button"><i class="delete"></i></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Lampa #3</td>
                         <td>Oświetlenie</td>
                         <td>08.04.2018</td>
-                        <td>TODO</td> <!-- TODO -->
+                        <td>
+                            <button class="btn btn-primary mr-2" type="button"><i class="edit"></i></button>
+                            <button class="btn btn-danger" type="button"><i class="delete"></i></button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h2>Dodawanie</h2>
-            <form action="#">
-                  <input type="text" name="smartcode" placeholder="SmartCode"><br/>
-                  <input type="text" name="group" placeholder="Grupa"><br/><br/>
-                  <input type="submit" value="Dodaj">
-            </form> <br/><br/>
-            <h2>Przywracanie</h2>
-            <form action="#">
-                  <input type="text" name="smartcode" placeholder="SmartCode"><br/>
-                  <input type="text" name="group" placeholder="Grupa"><br/><br/>
-                  <input type="submit" value="Przywróć">
-            </form> <br/><br/>
+            <div class="row text-center mt-5 flex flex-center">
+                <div class="col-sm-12 col-md-4">
+                    <h2>Dodawanie</h2>
+                    <form action="#">
+                        <input class="form-control" type="text" name="smartcode" placeholder="SmartCode"><br/>
+                        <input class="form-control" type="text" name="group" placeholder="Grupa"><br/><br/>
+                        <input class="btn btn-primary" type="submit" value="Dodaj">
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h2>Przywracanie</h2>
+                    <form action="#">
+                        <input class="form-control" type="text" name="smartcode" placeholder="SmartCode"><br/>
+                        <input class="form-control" type="text" name="group" placeholder="Grupa"><br/><br/>
+                        <input class="btn btn-primary" type="submit" value="Przywróć">
+                    </form>
+                </div>
+            </div>
+
         </main>
     </div>
 </div>

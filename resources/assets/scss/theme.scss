@@ -1,5 +1,33 @@
+$fa-font-path: "../fonts/webfonts";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&subset=latin-ext');
+@import "../../fonts/fontawesome/fontawesome.scss";
+@import "../../fonts/fontawesome/regular.scss";
+@import "../../fonts/fontawesome/solid.scss";
+@import "../../fonts/fontawesome/brands.scss";
+
+html,
+body,
+header,
+#intro {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+#intro {
+  background: url("https://watermark.lovepik.com/photo/50044/2641.jpg_wh1200.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
     font-size: .875rem;
+}
+
+table tr {
+  cursor: pointer;
+  line-height: 2;
 }
 
 .feather {
@@ -192,4 +220,42 @@ body {
  */
 
 .border-top { border-top: 1px solid #e5e5e5; }
+
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-middle {
+  align-items: center;
+}
+
+/**
+Icons
+ */
+.edit {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.3em;
+  color: #fff;
+
+  &:before {
+    content: fa-content($fa-var-pen-square);
+  }
+}
+
+.delete {
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.1em;
+  color: #fff;
+
+  &:before {
+    content: fa-content($fa-var-trash);
+  }
+}
